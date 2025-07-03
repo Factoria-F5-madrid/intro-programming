@@ -141,6 +141,7 @@ v=ajkglMnByFM](https://www.youtube.com/watch?v=ajkglMnByFM)
 - **KISS:** Keep It Simple, Stupid (Hazlo simple): No reinventes la rueda, si lo haces complicado en unos días no lo entenderás ni tú ni tu equipo.
 - **DRY:** Don't Repeat Yourself (Evita repetir código). La clave para saber que estás haciendo algo mal es si te repites.
 - **Código limpio:** entendible, tabulado, nombres claros (`camelCase`), sin caracteres innecesarios.
+- Si estás con Python escribe en tu interprete ``import this``
 
 > [!TIP]
 > ¿Qué significa DRY en programación?
