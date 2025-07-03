@@ -1,9 +1,8 @@
 <p align="center">
-  <img src="https://jorgebenitezlopez.com/tiddlywiki/pro/codefuente.jpg" alt="Código fuente" style="border:1px solid grey; max-width: 600px;">
+  <img src="https://jorgebenitezlopez.com/tiddlywiki/pro/codefuente.jpg" alt="Código fuente" style="border:1px solid grey; width: 100%; max-width: 100%;">
 </p>
 
-Este documento es una introducción práctica y conceptual a la programación, desde los fundamentos hasta la arquitectura de software.
-
+Este documento es una introducción práctica y conceptual a la programación, desde los fundamentos hasta la arquitectura de software. 
 ---
 
 # 💡 Índice
