@@ -121,8 +121,8 @@ Receta: Hacer un sándwich
 4. ¡Listo!
 ```
 Así, un algoritmo es una serie de pasos claros y ordenados para resolver un 
-problema y no es tan facil como parece: https://www.youtube.com/watch?
-v=ajkglMnByFM
+problema y no es tan facil como parece: [https://www.youtube.com/watch?
+v=ajkglMnByFM](https://www.youtube.com/watch?v=ajkglMnByFM)
 
 > [!TIP]
 > ¿Cuál es la principal forma de medir la eficiencia o calidad de un algoritmo?
