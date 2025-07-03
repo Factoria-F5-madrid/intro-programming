@@ -153,7 +153,7 @@ v=ajkglMnByFM
 Son estilos o enfoques para estructurar el código:
 
 - **Imperativo:** Das instrucciones paso a paso.
-- **Declarativo:** Dices qué quieres, no cómo hacerlo. Ej.: `array.map(...)` Algoritmos más optimizados que los que puedas escribir tú.
+- **Declarativo:** Dices qué quieres, no cómo hacerlo. Ej.: `array.map(...)` Algoritmos más optimizados que los que puedas escribir tú. Además, por ejemplo Python puro no vectoriza y NumPy puede hacer operaciones en bloque con C muchísimo más rápido
 - **POO (Programación Orientada a Objetos):** Organiza el código en objetos que combinan datos y acciones.
 - **Paradigma funcional:** Basado en funciones puras y evita el estado mutable.
 
@@ -162,6 +162,12 @@ Son estilos o enfoques para estructurar el código:
 > - 🔵 El imperativo da instrucciones paso a paso, el declarativo dice qué se quiere lograr.
 > - 🔴 El declarativo es más rápido siempre.
 > - 🟢 No hay diferencia, son lo mismo.
+
+> > [!TIP]
+> ¿Qué estilo de programación suele ser más eficiente en procesamiento de grandes volúmenes de datos?
+> - 🔵 El declarativo, porque puede aprovechar optimizaciones internas como operaciones vectorizadas y paralelismo.
+> - 🔴 El imperativo, porque controlas cada detalle y siempre es más rápido.
+> - 🟢 No hay diferencia, la eficiencia es idéntica en todos los casos.
 
 ### 🏗️ Patrones de diseño
 
