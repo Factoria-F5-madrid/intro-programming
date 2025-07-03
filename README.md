@@ -163,7 +163,7 @@ Son estilos o enfoques para estructurar el código:
 > - 🔴 El declarativo es más rápido siempre.
 > - 🟢 No hay diferencia, son lo mismo.
 
-> > [!TIP]
+> [!TIP]
 > ¿Qué estilo de programación suele ser más eficiente en procesamiento de grandes volúmenes de datos?
 > - 🔵 El declarativo, porque puede aprovechar optimizaciones internas como operaciones vectorizadas y paralelismo.
 > - 🔴 El imperativo, porque controlas cada detalle y siempre es más rápido.
