@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://jorgebenitezlopez.com/tiddlywiki/pro/codefuente.jpg" alt="Código fuente" style="border:1px solid grey; max-width: 600px;">
+</p>
+
+Este documento es una introducción práctica y conceptual a la programación, desde los fundamentos hasta la arquitectura de software.
+
+---
+
 # 💡 Índice
 
 - [1️⃣ ¿Qué es programar?](#1-qué-es-programar-)
@@ -7,8 +15,6 @@
 - [5️⃣ Formas de uso / Buenas Prácticas](#5-formas-de-uso--buenas-prácticas-)
 
 ---
-
-Este documento es una introducción práctica y conceptual a la programación, desde los fundamentos hasta la arquitectura de software.
 
 # 1️⃣ ¿QUÉ ES PROGRAMAR? 🤔
 
@@ -64,8 +70,16 @@ La semántica se refiere al significado del código. Puede estar bien escrito, p
 
 **Otros conceptos importantes:**
 
-- **Tipado:** ¿el lenguaje obliga a definir tipos de datos? (ej. `TypeScript`)
+- **Tipado o no tipado:** ¿El lenguaje obliga a definir tipos de datos? (ej. `Python`)
 - **Compilado o Interpretado:** ¿el código se traduce antes o en tiempo de ejecución?
+
+> [!TIP]
+> ¿Cuál de las siguientes afirmaciones es correcta sobre el tipado en Python?
+> - 🔵 Python permite mezclar tipos de datos sin restricciones (tipado débil).
+> - 🔴 Python es fuertemente tipado: no permite mezclar tipos incompatibles sin conversión explícita.
+> - 🟢 Python obliga a declarar el tipo de cada variable antes de usarla (tipado estático).
+
+**Explicación:** Python es un lenguaje de tipado fuerte y dinámico. Esto significa que cada dato tiene un tipo y no puedes mezclar tipos incompatibles (por ejemplo, sumar un string y un número) sin conversión explícita. Sin embargo, no necesitas declarar el tipo de las variables: Python lo determina automáticamente en tiempo de ejecución.
 
 > [!TIP]
 > ¿Qué ocurre si usas una palabra reservada como nombre de variable?
@@ -81,9 +95,16 @@ Antes de construir una casa (nuestro programa), necesitamos conocer nuestros
 materiales y herramientas.
 
 - **Estructuras de Datos:** Formas de organizar y almacenar datos.
-    - Array (`[]`): Lista ordenada.
+    - Array (`[]`): Lista ordenada mutable
     - Objeto/Diccionario (`{}`): Pares clave-valor.
+    - Tupla (`()`): Secuencia inmutable de elementos.
     - Otras: Lista enlazada, pila, cola, árbol, grafo...
+
+> [!TIP]
+> ¿Cuál es la principal diferencia entre una lista y una tupla en Python?
+> - 🔵 Las listas son inmutables y las tuplas mutables.
+> - 🔴 Las tuplas son inmutables y las listas mutables.
+> - 🟢 No hay ninguna diferencia, son lo mismo.
 
 - **Algoritmos:** Conjunto de instrucciones paso a paso, claras y finitas, diseñadas para realizar una tarea específica o resolver un problema. Son nuestras "herramientas", como una receta. Ejemplos:
 
@@ -105,10 +126,12 @@ problema y no es tan facil como parece: https://www.youtube.com/watch?
 v=ajkglMnByFM
 
 > [!TIP]
-> ¿Para qué sirve un algoritmo de ordenamiento?
-> - 🔵 Para organizar los elementos de una lista de manera eficiente.
-> - 🔴 Para crear nuevas estructuras de datos.
-> - 🟢 Para traducir código a lenguaje máquina.
+> ¿Cuál es la principal forma de medir la eficiencia o calidad de un algoritmo?
+> - 🔵 Por la cantidad de líneas de código que tiene.
+> - 🔴 Por la notación Big O, que indica cómo crece el tiempo o espacio requerido según el tamaño de los datos.
+> - 🟢 Por el lenguaje de programación en el que está escrito.
+
+**Explicación:** La notación Big O (O-grande) se usa para describir el comportamiento de un algoritmo cuando el tamaño de la entrada crece. Por ejemplo, un algoritmo de búsqueda lineal es O(n), mientras que uno de búsqueda binaria es O(log n). Esto ayuda a comparar la eficiencia de diferentes algoritmos, especialmente con grandes volúmenes de datos.
 
 ---
 
@@ -174,5 +197,11 @@ Ejemplos: `MVC`, `Microservicios`, `Monolito`...
 > - 🔵 Una forma de organizar y estructurar todo el sistema de software.
 > - 🔴 Un tipo de variable.
 > - 🟢 Un algoritmo de ordenamiento.
+
+> [!TIP]
+> ¿Qué patrón de arquitectura utiliza el framework Django?
+> - 🔵 Microservicios
+> - 🔴 Modelo-Vista-Controlador (MVC), aunque en Django se llama Modelo-Vista-Template (MVT)
+> - 🟢 Event Sourcing
 
 ---
