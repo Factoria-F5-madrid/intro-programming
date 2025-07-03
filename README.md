@@ -1,47 +1,54 @@
-# Índice
+# 💡 Índice
 
-- [1. ¿Qué es programar?](#1-qué-es-programar)
-- [2. ¿Cómo "hablamos" con una máquina?](#2-cómo-hablamos-con-una-máquina)
-- [3. Conocer el lenguaje para decirle lo que queremos](#3-conocer-el-lenguaje-para-decirle-lo-que-queremos)
-- [4. Estructuras de Datos y Algoritmos (A&ED)](#4-estructuras-de-datos-y-algoritmos-aed)
-- [5. Formas de uso / Buenas Prácticas](#5-formas-de-uso--buenas-prácticas)
-  - [Buenas prácticas](#-buenas-prácticas)
-  - [Paradigmas de programación](#-paradigmas-de-programación)
-  - [Patrones de diseño](#-patrones-de-diseño)
-  - [Patrones de arquitectura](#-patrones-de-arquitectura)
+- [1️⃣ ¿Qué es programar?](#1-qué-es-programar-)
+- [2️⃣ ¿Cómo "hablamos" con una máquina?](#2-cómo-hablamos-con-una-máquina-)
+- [3️⃣ Conocer el lenguaje para decirle lo que queremos](#3-conocer-el-lenguaje-para-decirle-lo-que-queremos-)
+- [4️⃣ Estructuras de Datos y Algoritmos (A&ED)](#4-estructuras-de-datos-y-algoritmos-aed-)
+- [5️⃣ Formas de uso / Buenas Prácticas](#5-formas-de-uso--buenas-prácticas-)
 
 ---
 
 Este documento es una introducción práctica y conceptual a la programación, desde los fundamentos hasta la arquitectura de software.
 
-# 1. ¿QUÉ ES PROGRAMAR?
+# 1️⃣ ¿QUÉ ES PROGRAMAR? 🤔
 
-Los ordenadores no entienden los lenguajes humanos como el español o italiano. Por eso, traducimos nuestros algoritmos a un lenguaje de programación, que sí pueden interpretar.
+Los ordenadores no entiendían los lenguajes humanos como el español o italiano. Por eso, traducimos nuestros algoritmos a un lenguaje de programación, que sí pueden interpretar.
 
 Estos lenguajes se ubican en una jerarquía que va desde el lenguaje máquina (binario) hasta los lenguajes de alto nivel como `Java`, `Python`, `JavaScript`, `C++`, entre otros.
 
-# 2. ¿CÓMO "HABLAMOS" CON UNA MÁQUINA?
+---
+
+# 2️⃣ ¿CÓMO "HABLAMOS" CON UNA MÁQUINA? 🖥️
 
 Para comunicarnos con una computadora usamos una sintaxis específica. Aquí algunas formas comunes:
 
-*   ¿Cómo creo características? → `JS: let o const x = 2`, `En Python x:2` 
-*   ¿Cómo creo una colección de cosas? → `Pythony JS: []`,
-*   ¿Cómo hago una comparación? → `==`, `>`, etc.
-*   ¿Cómo defino una acción? → `JS: function, Python: def`
-*   ¿Cómo llamo una acción? → `nombreDeLaFuncion()`
-*   ¿Cómo creo un bucle? → `for`, `while`, `map`, etc.
-*   ¿Cómo creo una condición? → `if`
-*   ¿Cómo concateno o uno cosas? → `+`
-*   ¿Cómo controlo el flujo? → `callbacks`, `condicionales`, `funciones`
+| Acción                | Ejemplo en JS         | Ejemplo en Python      |
+|-----------------------|----------------------|-----------------------|
+| Crear variable        | `let x = 2`          | `x = 2`               |
+| Crear colección       | `[]`                 | `[]`                  |
+| Comparar              | `==`, `>`            | `==`, `>`             |
+| Definir función       | `function`           | `def`                 |
+| Llamar función        | `miFuncion()`        | `mi_funcion()`        |
+| Bucle                 | `for`, `while`       | `for`, `while`        |
+| Condición             | `if`                 | `if`                  |
+| Concatenar            | `+`                  | `+`                   |
 
-# 3. CONOCER EL LENGUAJE PARA DECIRLE LO QUE QUEREMOS
+> [!TIP]
+> ¿Cuál es la forma correcta de definir una función en Python?
+> - 🔵 `function miFuncion()`
+> - 🔴 `def mi_funcion():`
+> - 🟢 `let mi_funcion = function()`
+
+---
+
+# 3️⃣ CONOCER EL LENGUAJE PARA DECIRLE LO QUE QUEREMOS 🗣️
 
 ### 🔤 Alfabeto
 
-*   **Letras:** Caracteres como `A`, `z`.
-*   **Dígitos:** Números como `123`.
-*   **Símbolos:** Operadores y signos como `+`, `{}`, `[]`, `*`.
-*   **Espacios en blanco:** Separan palabras y símbolos.
+- **Letras:** Caracteres como `A`, `z`.
+- **Dígitos:** Números como `123`.
+- **Símbolos:** Operadores y signos como `+`, `{}`, `[]`, `*`.
+- **Espacios en blanco:** Separan palabras y símbolos.
 
 ### 🔠 Léxico (Lexis)
 
@@ -57,72 +64,115 @@ La semántica se refiere al significado del código. Puede estar bien escrito, p
 
 **Otros conceptos importantes:**
 
-*   **Tipado:** ¿el lenguaje obliga a definir tipos de datos? (ej. `TypeScript` vs `JavaScript`)
-*   **Compilado o Interpretado:** ¿el código se traduce antes o en tiempo de ejecución?
+- **Tipado:** ¿el lenguaje obliga a definir tipos de datos? (ej. `TypeScript`)
+- **Compilado o Interpretado:** ¿el código se traduce antes o en tiempo de ejecución?
 
-# 4. ESTRUCTURAS DE DATOS Y ALGORITMOS (A&ED)
+> [!TIP]
+> ¿Qué ocurre si usas una palabra reservada como nombre de variable?
+> - 🔵 El programa funciona igual.
+> - 🔴 El programa da error o se comporta de forma inesperada.
+> - 🟢 El programa ignora la variable.
 
-Antes de construir una casa (nuestro programa), necesitamos conocer nuestros materiales y herramientas.
+---
 
-*   **Estructuras de Datos**: Son formas especializadas de organizar y almacenar datos para poder acceder a ellos y modificarlos de manera eficiente. Son nuestros "materiales".
-    *   **Array (`[]`)**: Una lista o colección ordenada de elementos.
-    *   **Objeto/Diccionario (`{}`)**: Una colección de pares clave-valor.
-    *   **Lista Enlazada, Pila, Cola, Árbol, Grafo...**: Estructuras más complejas para problemas específicos.
+# 4️⃣ ESTRUCTURAS DE DATOS Y ALGORITMOS (A&ED) 🧱
 
-*   **Algoritmos**: Son un conjunto de instrucciones paso a paso, claras y finitas, diseñadas para realizar una tarea específica o resolver un problema. Son nuestras "herramientas". Es como una receta, pueden ser más eficientes que otras. Más información buscar: "Complejidad logarítmica, notación Big O". Ejemplos:
-    *   **Búsqueda**: Encontrar un elemento en una estructura de datos (ej. Búsqueda lineal vs búsqueda Binaria).
-    *   **Ordenamiento**: Organizar los elementos de una lista (ej. Quicksort, Merge Sort).
-    *   **Recorridos**: Visitar todos los nodos de un árbol o grafo. Ejemplos. https://algorithm-visualizer.org/
+Antes de construir una casa (nuestro programa), necesitamos conocer nuestros 
+materiales y herramientas.
 
-**Ejemplo de algoritmo como receta (pseudocódigo):**
+- **Estructuras de Datos:** Formas de organizar y almacenar datos.
+    - Array (`[]`): Lista ordenada.
+    - Objeto/Diccionario (`{}`): Pares clave-valor.
+    - Otras: Lista enlazada, pila, cola, árbol, grafo...
+
+- **Algoritmos:** Conjunto de instrucciones paso a paso, claras y finitas, diseñadas para realizar una tarea específica o resolver un problema. Son nuestras "herramientas", como una receta. Ejemplos:
+
+    - **Búsqueda:** Encontrar un elemento en una estructura de datos (ej. búsqueda lineal vs binaria).
+    - **Ordenamiento:** Organizar los elementos de una lista (ej. Quicksort, Merge Sort).
+    - **Recorridos:** Visitar todos los nodos de un árbol o grafo.  
+      👉 [Visualiza algoritmos aquí](https://algorithm-visualizer.org/)
 
 ```plaintext
 Receta: Hacer un sándwich
 
 1. Tomar dos rebanadas de pan.
-2. Poner una rebanada de jamón sobre una de las rebanadas de pan.
-3. Poner una rebanada de queso sobre el jamón.
-4. Tapar con la otra rebanada de pan.
-5. ¡Listo! El sándwich está hecho.
+2. Poner jamón y queso.
+3. Tapar con la otra rebanada.
+4. ¡Listo!
 ```
+Así, un algoritmo es una serie de pasos claros y ordenados para resolver un 
+problema y no es tan facil como parece: https://www.youtube.com/watch?
+v=ajkglMnByFM
 
-Así, un algoritmo es una serie de pasos claros y ordenados para resolver un problema y no es tan facil como parece: https://www.youtube.com/watch?v=ajkglMnByFM
+> [!TIP]
+> ¿Para qué sirve un algoritmo de ordenamiento?
+> - 🔵 Para organizar los elementos de una lista de manera eficiente.
+> - 🔴 Para crear nuevas estructuras de datos.
+> - 🟢 Para traducir código a lenguaje máquina.
 
-Dominar A&ED es fundamental para escribir código eficiente y optimizado.
+---
 
-# 5. FORMAS DE USO Y BUENAS PRÁCTICAS EN GENERAL
+# 5️⃣ FORMAS DE USO Y BUENAS PRÁCTICAS EN GENERAL 🛠️
 
-### ✅ Buenas prácticas:
+### ✅ Buenas prácticas
 
-*   **KISS**: Keep It Simple, Stupid (Hazlo simple): No reinventes la rueda, si lo haces complicado en unos días no lo entenderás ni tú ni tu equipo.
-*   **DRY**: Don't Repeat Yourself (Evita repetir código). La clave pra saber que estás haciendo algo mal
-*   **Código limpio**: entendible, tabulado, nombres claros (`camelCase`), sin caracteres innecesarios.
+- **KISS:** Keep It Simple, Stupid (Hazlo simple): No reinventes la rueda, si lo haces complicado en unos días no lo entenderás ni tú ni tu equipo.
+- **DRY:** Don't Repeat Yourself (Evita repetir código). La clave para saber que estás haciendo algo mal es si te repites.
+- **Código limpio:** entendible, tabulado, nombres claros (`camelCase`), sin caracteres innecesarios.
+
+> [!TIP]
+> ¿Qué significa DRY en programación?
+> - 🔵 Don't Repeat Yourself (Evita repetir código).
+> - 🔴 Do Repeat Yourself (Repite el código).
+> - 🟢 Dry Run Your code (Ejecuta tu código en seco).
 
 ### 🧭 Paradigmas de programación
 
 Son estilos o enfoques para estructurar el código:
 
-*   **Imperativo**: Das instrucciones paso a paso.
-*   **Declarativo**: Dices qué quieres, no cómo hacerlo. Ej.: `array.map(...)` Algoritmos más optimizados que los que puedas escribir tú.
-*   **POO (Programación Orientada a Objetos)...**
-*   **Paradigma funcional...**
+- **Imperativo:** Das instrucciones paso a paso.
+- **Declarativo:** Dices qué quieres, no cómo hacerlo. Ej.: `array.map(...)` Algoritmos más optimizados que los que puedas escribir tú.
+- **POO (Programación Orientada a Objetos):** Organiza el código en objetos que combinan datos y acciones.
+- **Paradigma funcional:** Basado en funciones puras y evita el estado mutable.
 
-### 🏗️ Patrones de diseño...
+> [!TIP]
+> ¿Cuál es la diferencia entre el paradigma imperativo y el declarativo?
+> - 🔵 El imperativo da instrucciones paso a paso, el declarativo dice qué se quiere lograr.
+> - 🔴 El declarativo es más rápido siempre.
+> - 🟢 No hay diferencia, son lo mismo.
+
+### 🏗️ Patrones de diseño
 
 Si los A&ED son las herramientas y materiales, los **Patrones de Diseño son los planos de la casa**. No te dicen cómo hacer un ladrillo, pero sí dónde poner un muro para que el software sea robusto, flexible y mantenible.
 
 Son soluciones reutilizables a problemas comunes. Según el libro "Design Patterns" del "Gang of Four" (GoF), se agrupan en tres tipos: Creacionales, Estructurales y de Comportamiento.
 
-*   **Singleton**: Solo puede existir una instancia. Ej.: una llave maestra.
-*   **Factory**: Crea objetos según lo que necesites.
-*   **Observer**: Notifica a varios componentes cuando algo cambia. Ej.: un timbre.
+| Patrón      | Descripción                                              | Ejemplo                  |
+|------------|----------------------------------------------------------|--------------------------|
+| Singleton  | Solo puede existir una instancia.                        | Una llave maestra        |
+| Factory    | Crea objetos según lo que necesites.                     | Fábrica de autos         |
+| Observer   | Notifica a varios componentes cuando algo cambia.        | Un timbre                |
 
-### 🧱 Patrones de arquitectura...
+> [!TIP]
+> ¿Para qué sirve el patrón Singleton?
+> - 🔵 Para asegurar que solo exista una instancia de una clase.
+> - 🔴 Para crear muchas instancias diferentes.
+> - 🟢 Para notificar a varios componentes.
+
+### 🧱 Patrones de arquitectura
 
 El plano general del sistema: cómo se organizan y comunican las partes.
 
-*   ¿Una sola planta (monolito) o varias (microservicios)?
-*   ¿Dónde va la cocina (backend) y el salón (frontend)?
-*   ¿Qué tan fácil es ampliar la casa (escalabilidad)?
+- ¿Una sola planta (monolito) o varias (microservicios)?
+- ¿Dónde va la cocina (backend) y el salón (frontend)?
+- ¿Qué tan fácil es ampliar la casa (escalabilidad)?
 
-Ejemplos: `MVC`, `Microservicios`, `Monolito`... 
+Ejemplos: `MVC`, `Microservicios`, `Monolito`...
+
+> [!TIP]
+> ¿Qué es un patrón de arquitectura?
+> - 🔵 Una forma de organizar y estructurar todo el sistema de software.
+> - 🔴 Un tipo de variable.
+> - 🟢 Un algoritmo de ordenamiento.
+
+---
